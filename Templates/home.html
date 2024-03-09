@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MY RESUME</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/home.css" >
+    <title>MY RESUME</title>
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+      }
+
+      body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          position: relative;
+          background-color: #7D9D9C;
+      }
+
+      .container {
+          display: flex;
+          width: 80%;
+          height: 75%;
+          border: 1px solid #F0EBE3;
+          border-radius: 20px;
+          justify-content: center;
+          align-items: center;
+          background-color: #E4DCCF;
+      }
+
+      .right_space {
+          position: absolute;
+          right: 101px;
+          width: 55%;
+          height: 75%;
+          border: 1px solid #7D9D9C;
+          border-radius: 20px;
+          background-color: #F0EBE3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .right_space #name {
+          text-align: center;
+          font-size: x-large;
+          color: #377D71;
+          font-family: "Poppins", sans-serif;
+      }
+
+      .right_space #tag {
+          position: absolute;
+          bottom: 160px;
+          font-size: medium;
+          color: #377D71;
+      }
+
+      .container .profile_pic {
+          position: absolute;
+          width: 150px;
+          height: 150px;
+          border: 1px solid;
+          border-radius: 100px;
+          left: 160px;
+          bottom: 280px;
+          background-image: url(/pic.jpg);
+          background-size: cover;
+      }
+
+      .container .details #name {
+          position: absolute;
+          text-align: center;
+          font-size: medium;
+          color: #377D71;
+          font-family: "Poppins", sans-serif;
+          bottom: 250px;
+          left: 135px;
+      }
+    </style>
 </head>
 <body>
-  <h5>Good morning guys</h5>
+    <div class="container">
+        <div class="profile_pic"></div>
+        <div class="details">
+            <h6 id="name">Tejaswi Pratap Bodapati</h6>
+        </div>
+        <div class="right_space">
+            <h6 id="name">TEJASWI PRATAP BODAPATI</h6>
+            <h5 id="tag">CSE-Fresher</h5>
+        </div>
+    </div>
 </body>
 </html>
